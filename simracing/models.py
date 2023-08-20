@@ -44,14 +44,14 @@ class StrategyModel:
         if any(stint_length > self.max_stint_length for _, stint_length in stints):
             return float("inf")
 
-        used_compounds = set(s[0] for s in stints)
+        used_compounds = set(Tyre(s[0]) for s in stints)
         if used_compounds & self.required_compounds != self.required_compounds:
             return float("inf")
 
         time = 0
         for compound, stint_length in stints:
             x = [[i] for i in range(stint_length)]
-            stint_time = sum(self.tyre_models[compound].predict(x))
+            stint_time = sum(self.tyre_models[Tyre(compound)].predict(x))
             time += stint_time
 
         time += (len(stints) - 1) * self.pit_cost
