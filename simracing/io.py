@@ -1,7 +1,7 @@
 import csv
 from io import StringIO
 
-from simracing.constants import Tyre
+from simracing.types import Tyre
 
 
 def parse_lap_times(tsv_input):

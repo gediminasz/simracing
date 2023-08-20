@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-from simracing.constants import Tyre
 from simracing.io import parse_lap_times
+from simracing.types import RaceParameters, Tyre
 
 
-def fit_model(tsv_data, **kwargs):
+def fit_model(*, tsv_data: str, race_parameters: RaceParameters):
     lap_time_data = parse_lap_times(tsv_data)
 
     tyre_models = {
@@ -17,35 +17,33 @@ def fit_model(tsv_data, **kwargs):
     for compound, model in tyre_models.items():
         colors = {Tyre.RS: "crimson", Tyre.RM: "orange", Tyre.RH: "dimgray"}
         _plot_model(
-            lap_time_data[compound], model, kwargs["max_stint_length"], colors[compound]
+            lap_time_data[compound],
+            model,
+            race_parameters.max_stint_length,
+            colors[compound],
         )
 
-    return StrategyModel(tyre_models=tyre_models, **kwargs)
+    return StrategyModel(tyre_models=tyre_models, race_parameters=race_parameters)
 
 
 class StrategyModel:
-    def __init__(
-        self,
-        *,
-        tyre_models: dict,
-        required_compounds: set,
-        max_stint_length: int,
-        pit_cost: float,
-    ):
+    def __init__(self, *, tyre_models: dict, race_parameters: RaceParameters):
         self.tyre_models = tyre_models
-        self.max_stint_length = max_stint_length
-        self.required_compounds = required_compounds
-        self.pit_cost = pit_cost
+        self.race_parameters = race_parameters
 
     def evaluate(self, stints):
         if stints[0][0] == -1:  # must start on some tyres
             return float("inf")
 
-        if any(stint_length > self.max_stint_length for _, stint_length in stints):
+        if any(
+            stint_length > self.race_parameters.max_stint_length
+            for _, stint_length in stints
+        ):
             return float("inf")
 
         used_compounds = set(Tyre(s[0]) for s in stints)
-        if used_compounds & self.required_compounds != self.required_compounds:
+        required_compounds = self.race_parameters.required_compounds
+        if used_compounds & required_compounds != required_compounds:
             return float("inf")
 
         time = 0
@@ -54,7 +52,7 @@ class StrategyModel:
             stint_time = sum(self.tyre_models[Tyre(compound)].predict(x))
             time += stint_time
 
-        time += (len(stints) - 1) * self.pit_cost
+        time += (len(stints) - 1) * self.race_parameters.pit_cost
 
         return time
 

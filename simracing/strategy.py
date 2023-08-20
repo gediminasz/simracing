@@ -1,21 +1,16 @@
 import pygad
 
 
-def predict_strategy(
-    *,
-    model,
-    lap_count: int,
-    available_compounds: set,
-):
+def predict_strategy(model, race_parameters):
     def _fitness_function(ga_instance, solution, solution_idx):
         stints = _partition_stints(solution)
         return -model.evaluate(stints)  # negate because solution is being maximized
 
-    available_compounds = [c.value for c in available_compounds]
+    available_compounds = [c.value for c in race_parameters.available_compounds]
 
     ga_instance = pygad.GA(
         fitness_func=_fitness_function,
-        num_genes=lap_count,
+        num_genes=race_parameters.lap_count,
         gene_type=int,
         gene_space=[-1, *available_compounds],
         num_generations=512,
