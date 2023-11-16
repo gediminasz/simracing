@@ -9,7 +9,7 @@ import statistics
 from gt7dashboard.gt7helper import load_laps_from_pickle
 import pyperclip
 
-repository_location = pathlib.Path("../gt7dashboard")
+repository_location = pathlib.Path("../clones/gt7dashboard")
 data_files = list((repository_location / "data").iterdir())
 latest_file = sorted(data_files)[-1]
 print(latest_file)
