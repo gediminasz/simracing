@@ -1,5 +1,5 @@
 # Usage:
-# poetry run python .\tools\printgt7laps.py
+# poetry run python .\tools\gt7dashboard\print_laps.py
 
 import os
 import sys
