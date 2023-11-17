@@ -47,10 +47,14 @@ class StrategyModel:
             return float("inf")
 
         time = 0
+        laps = 0
         for compound, stint_length in stints:
             x = [[i] for i in range(stint_length)]
             stint_time = sum(self.tyre_models[Tyre(compound)].predict(x))
             time += stint_time
+            laps += stint_length
+
+        assert laps == self.race_parameters.lap_count
 
         time += (len(stints) - 1) * self.race_parameters.pit_cost
 
