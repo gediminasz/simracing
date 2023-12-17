@@ -22,7 +22,7 @@ mean_fuel = statistics.mean(l.fuel_consumed for l in laps[1:])
 for l in laps:
     print(f"{l.number}\t{l.lap_finish_time/1000}")
 print()
-print(f"Avarage fuel per lap: {mean_fuel:.1f}")
+print(f"Average fuel per lap: {mean_fuel:.1f}")
 
 lap_times = "\n".join(str(l.lap_finish_time/1000) for l in laps)
 pyperclip.copy(lap_times)

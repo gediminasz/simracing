@@ -27,7 +27,7 @@ for i, l in enumerate(laps, 0):
         fuel = laps[i-1]["fuel"] - l["fuel"]
         fuel_used.append(fuel)
         print(f"{i+1:<4}{l["lapTime"]/1000:10}\t{fuel:5.1f}")
-print(f"\nAvarege fuel per lap: {statistics.mean(fuel_used):.1f}")
+print(f"\nAverage fuel per lap: {statistics.mean(fuel_used):.1f}")
 
 lap_times = "\n".join(str(l["lapTime"]/1000) for l in laps)
 pyperclip.copy(lap_times)
