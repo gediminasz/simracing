@@ -8,7 +8,7 @@ import pyperclip
 practice1 = Path.home() / "Documents/Assetto Corsa Competizione/Results/Practice_1.json"
 assert practice1.exists()
 
-practice2 = Path.home() / "Documents/Assetto Corsa Competizione/Results/Practice_1.json"
+practice2 = Path.home() / "Documents/Assetto Corsa Competizione/Results/Practice_2.json"
 assert practice2.exists()
 
 latest = max(practice1, practice2, key=lambda p: p.stat().st_mtime)
