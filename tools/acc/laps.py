@@ -22,10 +22,9 @@ fuel_used = []
 print("\nLap       Time    Fuel    Used")
 for i, l in enumerate(laps, 0):
     fuel = laps[i-1]["fuel"] - l["fuel"] if i > 0 else 0
-    if fuel > 0:
-        fuel_used.append(fuel)
 
     if fuel > 0:
+        fuel_used.append(fuel)
         print(f"{i+1:<4}{l["lapTime"]/1000:10.3f}{l["fuel"]:8.1f}{fuel:8.1f}")
     else:
         print(f"{i+1:<4}{l["lapTime"]/1000:10.3f}{l["fuel"]:8.1f}")
