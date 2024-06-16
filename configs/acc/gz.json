@@ -9,7 +9,7 @@
 			"version": 0,
 			"productName": "G923 Racing Wheel for PS4 and PC",
 			"productId": "3261465709-0-0-00807368867368",
-			"instanceGuid": "{30C07180-15E0-11EE-8010-444553540000}",
+			"instanceGuid": "{30C0BFA0-15E0-11EE-8012-444553540000}",
 			"steeringWheelModel": "None",
 			"isGamePad": 0,
 			"isPedals": 0,
@@ -114,6 +114,42 @@
 					"pinkieExtendedActionCode": "None"
 				},
 				{
+					"buttonIndex": 21,
+					"powIndex": -1,
+					"powValue": 0,
+					"keyName": "None",
+					"gamepadButtonName": "None",
+					"instantActionCode": "IncreaseABS",
+					"extendedActionCode": "None",
+					"extendedTime": 2,
+					"pinkieInstanceActionCode": "None",
+					"pinkieExtendedActionCode": "None"
+				},
+				{
+					"buttonIndex": 22,
+					"powIndex": -1,
+					"powValue": 0,
+					"keyName": "None",
+					"gamepadButtonName": "None",
+					"instantActionCode": "DecreaseABS",
+					"extendedActionCode": "None",
+					"extendedTime": 2,
+					"pinkieInstanceActionCode": "None",
+					"pinkieExtendedActionCode": "None"
+				},
+				{
+					"buttonIndex": 24,
+					"powIndex": -1,
+					"powValue": 0,
+					"keyName": "None",
+					"gamepadButtonName": "None",
+					"instantActionCode": "None",
+					"extendedActionCode": "None",
+					"extendedTime": 2,
+					"pinkieInstanceActionCode": "None",
+					"pinkieExtendedActionCode": "None"
+				},
+				{
 					"buttonIndex": 7,
 					"powIndex": -1,
 					"powValue": 0,
@@ -150,42 +186,6 @@
 					"pinkieExtendedActionCode": "None"
 				},
 				{
-					"buttonIndex": 9,
-					"powIndex": -1,
-					"powValue": 0,
-					"keyName": "None",
-					"gamepadButtonName": "None",
-					"instantActionCode": "Pause",
-					"extendedActionCode": "None",
-					"extendedTime": 2,
-					"pinkieInstanceActionCode": "None",
-					"pinkieExtendedActionCode": "None"
-				},
-				{
-					"buttonIndex": 21,
-					"powIndex": -1,
-					"powValue": 0,
-					"keyName": "None",
-					"gamepadButtonName": "None",
-					"instantActionCode": "IncreaseABS",
-					"extendedActionCode": "None",
-					"extendedTime": 1,
-					"pinkieInstanceActionCode": "None",
-					"pinkieExtendedActionCode": "None"
-				},
-				{
-					"buttonIndex": 22,
-					"powIndex": -1,
-					"powValue": 0,
-					"keyName": "None",
-					"gamepadButtonName": "None",
-					"instantActionCode": "DecreaseABS",
-					"extendedActionCode": "None",
-					"extendedTime": 1,
-					"pinkieInstanceActionCode": "None",
-					"pinkieExtendedActionCode": "None"
-				},
-				{
 					"buttonIndex": 19,
 					"powIndex": -1,
 					"powValue": 0,
@@ -193,7 +193,7 @@
 					"gamepadButtonName": "None",
 					"instantActionCode": "IncreaseTC",
 					"extendedActionCode": "None",
-					"extendedTime": 1,
+					"extendedTime": 2,
 					"pinkieInstanceActionCode": "None",
 					"pinkieExtendedActionCode": "None"
 				},
@@ -204,6 +204,42 @@
 					"keyName": "None",
 					"gamepadButtonName": "None",
 					"instantActionCode": "DecreaseTC",
+					"extendedActionCode": "None",
+					"extendedTime": 2,
+					"pinkieInstanceActionCode": "None",
+					"pinkieExtendedActionCode": "None"
+				},
+				{
+					"buttonIndex": 6,
+					"powIndex": -1,
+					"powValue": 0,
+					"keyName": "None",
+					"gamepadButtonName": "None",
+					"instantActionCode": "CycleCarLightStages",
+					"extendedActionCode": "None",
+					"extendedTime": 2,
+					"pinkieInstanceActionCode": "None",
+					"pinkieExtendedActionCode": "None"
+				},
+				{
+					"buttonIndex": 23,
+					"powIndex": -1,
+					"powValue": 0,
+					"keyName": "None",
+					"gamepadButtonName": "None",
+					"instantActionCode": "EnableFlashingLights",
+					"extendedActionCode": "None",
+					"extendedTime": 1,
+					"pinkieInstanceActionCode": "None",
+					"pinkieExtendedActionCode": "None"
+				},
+				{
+					"buttonIndex": 10,
+					"powIndex": -1,
+					"powValue": 0,
+					"keyName": "None",
+					"gamepadButtonName": "None",
+					"instantActionCode": "LookBack",
 					"extendedActionCode": "None",
 					"extendedTime": 1,
 					"pinkieInstanceActionCode": "None",
@@ -222,50 +258,14 @@
 					"pinkieExtendedActionCode": "None"
 				},
 				{
-					"buttonIndex": 6,
+					"buttonIndex": 9,
 					"powIndex": -1,
 					"powValue": 0,
 					"keyName": "None",
 					"gamepadButtonName": "None",
-					"instantActionCode": "CycleCarLightStages",
+					"instantActionCode": "Pause",
 					"extendedActionCode": "None",
-					"extendedTime": 1,
-					"pinkieInstanceActionCode": "None",
-					"pinkieExtendedActionCode": "None"
-				},
-				{
-					"buttonIndex": 23,
-					"powIndex": -1,
-					"powValue": 0,
-					"keyName": "None",
-					"gamepadButtonName": "None",
-					"instantActionCode": "EnableFlashingLights",
-					"extendedActionCode": "None",
-					"extendedTime": 1,
-					"pinkieInstanceActionCode": "None",
-					"pinkieExtendedActionCode": "None"
-				},
-				{
-					"buttonIndex": 1,
-					"powIndex": -1,
-					"powValue": 0,
-					"keyName": "None",
-					"gamepadButtonName": "None",
-					"instantActionCode": "PitLimiter",
-					"extendedActionCode": "None",
-					"extendedTime": 1,
-					"pinkieInstanceActionCode": "None",
-					"pinkieExtendedActionCode": "None"
-				},
-				{
-					"buttonIndex": 10,
-					"powIndex": -1,
-					"powValue": 0,
-					"keyName": "None",
-					"gamepadButtonName": "None",
-					"instantActionCode": "LookBack",
-					"extendedActionCode": "None",
-					"extendedTime": 1,
+					"extendedTime": 2,
 					"pinkieInstanceActionCode": "None",
 					"pinkieExtendedActionCode": "None"
 				}
@@ -300,6 +300,31 @@
 					"isCombined": false
 				}
 			],
+			"forceFeedbackGain": 0.34999999403953552,
+			"steerScale": 1,
+			"steerLock": 540,
+			"dynamicDamping": 1,
+			"steerLinearity": 1,
+			"roadEffects": 0,
+			"minDamper": 0,
+			"damperGain": 1,
+			"antaniGain": 1,
+			"minimumForceFeedback": 0,
+			"brakeGamma": 1,
+			"combinedPedals": 0
+		},
+		{
+			"version": 0,
+			"productName": "G923 Racing Wheel for PS4 and PC",
+			"productId": "3261465709-0-0-00807368867368",
+			"instanceGuid": "{30C07180-15E0-11EE-8010-444553540000}",
+			"steeringWheelModel": "None",
+			"isGamePad": 0,
+			"isPedals": 0,
+			"iconTemplate": "None",
+			"uICommandButtonList": [],
+			"raceCommandButtonList": [],
+			"raceCommandAxisList": [],
 			"forceFeedbackGain": 0.34999999403953552,
 			"steerScale": 1,
 			"steerLock": 540,
@@ -439,6 +464,39 @@
 		"uICommandButtonList": [],
 		"raceCommandButtonList": [
 			{
+				"actionType": "LookLeft",
+				"key":
+				{
+					"key": "H",
+					"bShift": false,
+					"bCtrl": false,
+					"bAlt": false,
+					"bCmd": false
+				}
+			},
+			{
+				"actionType": "LookBack",
+				"key":
+				{
+					"key": "J",
+					"bShift": false,
+					"bCtrl": false,
+					"bAlt": false,
+					"bCmd": false
+				}
+			},
+			{
+				"actionType": "LookRight",
+				"key":
+				{
+					"key": "K",
+					"bShift": false,
+					"bCtrl": false,
+					"bAlt": false,
+					"bCmd": false
+				}
+			},
+			{
 				"actionType": "KeyboardSteerLeft",
 				"key":
 				{
@@ -498,39 +556,6 @@
 				"key":
 				{
 					"key": "X",
-					"bShift": false,
-					"bCtrl": false,
-					"bAlt": false,
-					"bCmd": false
-				}
-			},
-			{
-				"actionType": "LookLeft",
-				"key":
-				{
-					"key": "H",
-					"bShift": false,
-					"bCtrl": false,
-					"bAlt": false,
-					"bCmd": false
-				}
-			},
-			{
-				"actionType": "LookBack",
-				"key":
-				{
-					"key": "J",
-					"bShift": false,
-					"bCtrl": false,
-					"bAlt": false,
-					"bCmd": false
-				}
-			},
-			{
-				"actionType": "LookRight",
-				"key":
-				{
-					"key": "K",
 					"bShift": false,
 					"bCtrl": false,
 					"bAlt": false,
