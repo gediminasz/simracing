@@ -42,3 +42,9 @@ def generate_config(
 
 if __name__ == "__main__":
     fire.Fire(generate_config)
+
+# TODO set current date
+# "RaceDateYear" : 2015,
+# "RaceDateMonth" : 7,
+# "RaceDateDay" : 6,
+# "RaceDateHour" : 11,

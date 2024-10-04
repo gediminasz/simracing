@@ -100,12 +100,12 @@ sessionAttributes : {
 
     "RaceDateHour" : 15,
 
-    "PracticeWeatherSlots" : 1,
-    "PracticeWeatherSlot1" : -934211870,
+    "PracticeWeatherSlots" : 0,
+    "PracticeWeatherProgression": 1,
 
-    "QualifyWeatherSlots" : 1,
-    "QualifyWeatherSlot1" : -934211870,
+    "QualifyWeatherSlots" : 0,
+    "QualifyWeatherProgression": 1,
 
-    "RaceWeatherSlots" : 1,
-    "RaceWeatherSlot1" : -934211870,
+    "RaceWeatherSlots" : 0,
+    "RaceWeatherProgression": 1,
 }
