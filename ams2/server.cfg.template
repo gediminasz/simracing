@@ -73,12 +73,12 @@ sessionAttributes : {
     "MaxPlayers" : 11,
 
     "PracticeLength" : 0,
-    "QualifyLength" : 1,
-    "RaceLength" : 5,
+    "QualifyLength" : 5,
+    "RaceLength" : 15,
 
-    "Flags" : 1704682,
+    "Flags" : 1704672,
 
-    "OpponentDifficulty" : 100,
+    "OpponentDifficulty" : 80,
 
     // Visual only damage
     "DamageType" : 1,
@@ -95,8 +95,8 @@ sessionAttributes : {
     // Any camera view allowed.
     "AllowedViews" : 0,
 
-    "TrackId" : -507834810,  // Silverstone_2001_National
-    "VehicleClassId" : -1091733035,  // StockCarV8_2024
+    "TrackId" : ${track_id},
+    "VehicleClassId" : ${vehicle_class},
 
     "RaceDateHour" : 15,
 
