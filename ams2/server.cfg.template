@@ -78,7 +78,7 @@ sessionAttributes : {
 
     "Flags" : ${flags},
 
-    "OpponentDifficulty" : 80,
+    "OpponentDifficulty" : 85,
 
     // Visual only damage
     "DamageType" : 1,
@@ -100,10 +100,12 @@ sessionAttributes : {
 
     "RaceDateHour" : 15,
 
-    // Single weather slot set to "Weather_Clear1". See /api/list/enums/weather in HTTP API or globals "lists.enums.weather" or "Weather" in Lua API.
+    "PracticeWeatherSlots" : 1,
+    "PracticeWeatherSlot1" : -934211870,
+
+    "QualifyWeatherSlots" : 1,
+    "QualifyWeatherSlot1" : -934211870,
+
     "RaceWeatherSlots" : 1,
     "RaceWeatherSlot1" : -934211870,
-    "RaceWeatherSlot2" : -934211870,
-    "RaceWeatherSlot3" : -934211870,
-    "RaceWeatherSlot4" : -934211870,
 }
