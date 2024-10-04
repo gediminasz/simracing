@@ -1,0 +1,68 @@
+{
+    "result": "ok",
+    "response": {
+        "description": "Enum describing all weather conditions",
+        "list": [
+            {
+                "value": -934211870,
+                "name": "Clear"
+            },
+            {
+                "value": 296956818,
+                "name": "LightCloud"
+            },
+            {
+                "value": 888299130,
+                "name": "MediumCloud"
+            },
+            {
+                "value": 129238383,
+                "name": "HeavyCloud"
+            },
+            {
+                "value": -1293634875,
+                "name": "Overcast"
+            },
+            {
+                "value": 270338437,
+                "name": "LightRain"
+            },
+            {
+                "value": 1461703858,
+                "name": "Rain"
+            },
+            {
+                "value": -1592958063,
+                "name": "Storm"
+            },
+            {
+                "value": -2112363295,
+                "name": "ThunderStorm"
+            },
+            {
+                "value": 2067843977,
+                "name": "Foggy"
+            },
+            {
+                "value": -358600329,
+                "name": "FogWithRain"
+            },
+            {
+                "value": -754279862,
+                "name": "HeavyFog"
+            },
+            {
+                "value": -1604560069,
+                "name": "HeavyFogWithRain"
+            },
+            {
+                "value": -1299791789,
+                "name": "Hazy"
+            },
+            {
+                "value": 1275961519,
+                "name": "Random"
+            }
+        ]
+    }
+}
