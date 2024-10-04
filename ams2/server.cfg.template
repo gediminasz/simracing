@@ -76,7 +76,7 @@ sessionAttributes : {
     "QualifyLength" : 5,
     "RaceLength" : 15,
 
-    "Flags" : 1704672,
+    "Flags" : ${flags},
 
     "OpponentDifficulty" : 80,
 

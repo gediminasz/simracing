@@ -11,6 +11,8 @@ VEHICLE_CLASSES = {
     c["name"]: c["value"] for c in json.loads(Path("enum/vehicle_classes.json").read_text())["response"]["list"]
 }
 
+FLAGS = {f["name"]: f["value"] for f in json.loads(Path("enum/flags.json").read_text())["response"]["list"]}
+
 
 def generate_config(
     *,
@@ -23,6 +25,17 @@ def generate_config(
     output = template.substitute(
         track_id=TRACKS[track],
         vehicle_class=VEHICLE_CLASSES[vehicle_class],
+        flags=(
+            FLAGS["ABS_ALLOWED"]
+            + FLAGS["SC_ALLOWED"]
+            + FLAGS["TCS_ALLOWED"]
+            + FLAGS["FORCE_SAME_VEHICLE_CLASS"]
+            + FLAGS["FILL_SESSION_WITH_AI"]
+            + FLAGS["AUTO_START_ENGINE"]
+            + FLAGS["TIMED_RACE"]
+            + FLAGS["ONLINE_REPUTATION_ENABLED"]
+            + FLAGS["WAIT_FOR_RACE_READY_INPUT"]
+        ),
     )
     Path(output_path).write_text(output)
 
