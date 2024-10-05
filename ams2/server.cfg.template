@@ -98,14 +98,23 @@ sessionAttributes : {
     "TrackId" : ${track_id},
     "VehicleClassId" : ${vehicle_class},
 
-    "RaceDateHour" : 15,
+    "RaceDateYear": ${race_date_year},
+    "RaceDateMonth": ${race_date_month},
+    "RaceDateDay": ${race_date_day},
 
+
+    "PracticeDateHour": 9,
+    "PracticeDateProgression": 1,
     "PracticeWeatherSlots" : 0,
     "PracticeWeatherProgression": 1,
 
+    "QualifyDateHour": 12,
+    "QualifyDateProgression": 1,
     "QualifyWeatherSlots" : 0,
     "QualifyWeatherProgression": 1,
 
+    "RaceDateHour" : 15,
+    "RaceDateProgression": 1,
     "RaceWeatherSlots" : 0,
     "RaceWeatherProgression": 1,
 }

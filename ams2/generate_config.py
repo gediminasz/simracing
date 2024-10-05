@@ -1,5 +1,6 @@
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 from string import Template
 
@@ -21,6 +22,7 @@ def generate_config(
     vehicle_class: str,
     track: str,
 ):
+    today = datetime.today()
     template = Template(Path(template_path).read_text())
     output = template.substitute(
         track_id=TRACKS[track],
@@ -36,6 +38,9 @@ def generate_config(
             + FLAGS["ONLINE_REPUTATION_ENABLED"]
             + FLAGS["WAIT_FOR_RACE_READY_INPUT"]
         ),
+        race_date_year=today.year,
+        race_date_month=today.month,
+        race_date_day=today.day,
     )
     Path(output_path).write_text(output)
 
