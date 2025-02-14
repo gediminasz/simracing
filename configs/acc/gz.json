@@ -9,7 +9,7 @@
 			"version": 0,
 			"productName": "G923 Racing Wheel for PS4 and PC",
 			"productId": "3261465709-0-0-00807368867368",
-			"instanceGuid": "{30C0BFA0-15E0-11EE-8012-444553540000}",
+			"instanceGuid": "{30C07180-15E0-11EE-8010-444553540000}",
 			"steeringWheelModel": "None",
 			"isGamePad": 0,
 			"isPedals": 0,
@@ -132,18 +132,6 @@
 					"keyName": "None",
 					"gamepadButtonName": "None",
 					"instantActionCode": "DecreaseABS",
-					"extendedActionCode": "None",
-					"extendedTime": 2,
-					"pinkieInstanceActionCode": "None",
-					"pinkieExtendedActionCode": "None"
-				},
-				{
-					"buttonIndex": 24,
-					"powIndex": -1,
-					"powValue": 0,
-					"keyName": "None",
-					"gamepadButtonName": "None",
-					"instantActionCode": "None",
 					"extendedActionCode": "None",
 					"extendedTime": 2,
 					"pinkieInstanceActionCode": "None",
@@ -300,9 +288,9 @@
 					"isCombined": false
 				}
 			],
-			"forceFeedbackGain": 0.34999999403953552,
+			"forceFeedbackGain": 0.25,
 			"steerScale": 1,
-			"steerLock": 540,
+			"steerLock": 900,
 			"dynamicDamping": 1,
 			"steerLinearity": 1,
 			"roadEffects": 0,
@@ -414,8 +402,7 @@
 			"combinedPedals": 0
 		}
 	],
-	"gamepadSettings":
-	{
+	"gamepadSettings": {
 		"useSteerWithRight": false,
 		"rumbleIntensity": 0.80000001192092896,
 		"steerSpeed": 0.69999998807907104,
@@ -429,8 +416,7 @@
 		"raceCommandButtonList": [
 			{
 				"actionType": "GearUp",
-				"key":
-				{
+				"key": {
 					"key": "Gamepad_FaceButton_Bottom",
 					"bShift": false,
 					"bCtrl": false,
@@ -440,8 +426,7 @@
 			},
 			{
 				"actionType": "GearDown",
-				"key":
-				{
+				"key": {
 					"key": "Gamepad_FaceButton_Left",
 					"bShift": false,
 					"bCtrl": false,
@@ -451,8 +436,7 @@
 			}
 		]
 	},
-	"keyboardSettings":
-	{
+	"keyboardSettings": {
 		"mouseSteering": false,
 		"mouseAcceleratorBrake": false,
 		"steerSpeed": 3.5,
@@ -465,8 +449,7 @@
 		"raceCommandButtonList": [
 			{
 				"actionType": "LookLeft",
-				"key":
-				{
+				"key": {
 					"key": "H",
 					"bShift": false,
 					"bCtrl": false,
@@ -476,8 +459,7 @@
 			},
 			{
 				"actionType": "LookBack",
-				"key":
-				{
+				"key": {
 					"key": "J",
 					"bShift": false,
 					"bCtrl": false,
@@ -487,8 +469,7 @@
 			},
 			{
 				"actionType": "LookRight",
-				"key":
-				{
+				"key": {
 					"key": "K",
 					"bShift": false,
 					"bCtrl": false,
@@ -498,8 +479,7 @@
 			},
 			{
 				"actionType": "KeyboardSteerLeft",
-				"key":
-				{
+				"key": {
 					"key": "Comma",
 					"bShift": false,
 					"bCtrl": false,
@@ -509,8 +489,7 @@
 			},
 			{
 				"actionType": "KeyboardSteerRight",
-				"key":
-				{
+				"key": {
 					"key": "Period",
 					"bShift": false,
 					"bCtrl": false,
@@ -520,8 +499,7 @@
 			},
 			{
 				"actionType": "KeyboardGas",
-				"key":
-				{
+				"key": {
 					"key": "A",
 					"bShift": false,
 					"bCtrl": false,
@@ -531,8 +509,7 @@
 			},
 			{
 				"actionType": "KeyboardBrake",
-				"key":
-				{
+				"key": {
 					"key": "Z",
 					"bShift": false,
 					"bCtrl": false,
@@ -542,8 +519,7 @@
 			},
 			{
 				"actionType": "KeyboardGearUp",
-				"key":
-				{
+				"key": {
 					"key": "SpaceBar",
 					"bShift": false,
 					"bCtrl": false,
@@ -553,8 +529,7 @@
 			},
 			{
 				"actionType": "KeyboardGearDown",
-				"key":
-				{
+				"key": {
 					"key": "X",
 					"bShift": false,
 					"bCtrl": false,
